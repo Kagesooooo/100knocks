@@ -1,0 +1,10 @@
+{'di', 'se', 'ar', 'is', 'ap', 'ad', 'pa', 'ra'}
+{'ag', 'ar', 'pa', 'ap', 'gr', 'ph', 'ra'}
+和集合
+{'di', 'se', 'ag', 'ar', 'is', 'ap', 'ad', 'gr', 'pa', 'ph', 'ra'}
+積集合
+{'ap', 'pa', 'ar', 'ra'}
+差集合
+{'ad', 'di', 'is', 'se'}
+{'gr', 'ag', 'ph'}
+seはXに含まれる
