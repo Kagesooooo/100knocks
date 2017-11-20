@@ -1,18 +1,42 @@
-from collections import OrderedDict
+import json
+import re
 
-with open('hightemp.txt','r') as f:
-    rd = f.readlines()
+f = open('jawiki-country.json')
+jdata = []
+eng = 0
+for i, s in enumerate(f.readlines()):
+    jdata.append(json.loads(s))
+    if jdata[i]['title'] == 'イギリス':
+        eng = i
+        break
+text = jdata[eng]['text'].split('\n')
 
+flag = 0
 dic = {}
-for  s in rd:
-    list0 = s[:-1].split('\t')
-    if list0[0] not in dic:
-        dic[list0[0]] = []
-    dic[list0[0]].append(list0[1:])
+field = ''
+for i, s in enumerate(text):
+    s = re.sub(r"('''|'')","",s)
+    if s[0:2] == '{{' and '基礎情報' in s:
+        flag = 1
+        continue
+    if s == '}}':
+        break
+    if flag == 1:
+        s = re.sub(r'{{','[[',re.sub(r'}}',']]',s))
+        link_rm = re.search(r'\[{2}(.*?)(\|(.*?)|)(\|(.*?)|)\]{2}',s)
+        if link_rm != None:
+            if link_rm.group(5) != None:
+                s = re.sub(r'\[{2}(.*?)\|(.*?)\|(.*?)\]{2}',link_rm.group(5),s)
+            elif link_rm.group(3) != None:
+                s = re.sub(r'\[{2}(.*?)\|(.*?)\]{2}',link_rm.group(3),s)
+            else:
+                s = re.sub(r'(\[{2}|\]{2})','',s)
+        match = re.search(r'^\|(.*?) = (.*?)$',s)
+        if match != None:
+            field = match.group(1)
+            dic[field] = match.group(2)
+        else:
+            dic[field] += '\n' + s
 
-wd = ''
-for t in OrderedDict(sorted(dic.items(), key=lambda x:len(x[1]), reverse=True)):
-    for list1 in dic[t]:
-        wd += t + '\t' + '\t'.join([st for i,st in enumerate(list1)]) + '\n'
-
-print(wd[:-1])
+for k,v in dic.items():
+    print(k,v)

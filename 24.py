@@ -14,10 +14,9 @@ for i in range(len(rd)):
 text = jdata[eng]['text'].split('\n')
 
 for s in text:
-    match = re.search(r'File:(.*?)\|',s)
+    match = re.search(r'(File|ファイル):(.*?)\|',s)
     if match != None:
-        # print(match.group(1))
-        print(match.group(1))
+        print(match.group(2))
 
 
 # http://www.yukun.info/blog/2008/08/python-regexp-greedy-reluctant-match.html
