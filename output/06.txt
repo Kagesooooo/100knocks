@@ -8,3 +8,13 @@
 {'ad', 'di', 'is', 'se'}
 {'gr', 'ag', 'ph'}
 seはXに含まれる
+{'is', 'pa', 'ar', 'ap', 'se', 'ad', 'di', 'ra'}
+{'ph', 'pa', 'ar', 'ap', 'gr', 'ag', 'ra'}
+和集合
+{'ph', 'is', 'pa', 'ar', 'ap', 'se', 'gr', 'ad', 'ag', 'di', 'ra'}
+積集合
+{'ap', 'pa', 'ar', 'ra'}
+差集合
+{'di', 'ad', 'se', 'is'}
+{'ag', 'ph', 'gr'}
+seはXに含まれる
