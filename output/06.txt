@@ -1,20 +1,10 @@
-{'di', 'se', 'ar', 'is', 'ap', 'ad', 'pa', 'ra'}
-{'ag', 'ar', 'pa', 'ap', 'gr', 'ph', 'ra'}
+{'pa', 'ra', 'di', 'se', 'ar', 'ad', 'is', 'ap'}
+{'gr', 'pa', 'ra', 'ph', 'ag', 'ar', 'ap'}
 和集合
-{'di', 'se', 'ag', 'ar', 'is', 'ap', 'ad', 'gr', 'pa', 'ph', 'ra'}
+{'gr', 'pa', 'ra', 'ph', 'di', 'se', 'ag', 'ar', 'ad', 'is', 'ap'}
 積集合
-{'ap', 'pa', 'ar', 'ra'}
+{'ar', 'ap', 'pa', 'ra'}
 差集合
-{'ad', 'di', 'is', 'se'}
-{'gr', 'ag', 'ph'}
-seはXに含まれる
-{'is', 'pa', 'ar', 'ap', 'se', 'ad', 'di', 'ra'}
-{'ph', 'pa', 'ar', 'ap', 'gr', 'ag', 'ra'}
-和集合
-{'ph', 'is', 'pa', 'ar', 'ap', 'se', 'gr', 'ad', 'ag', 'di', 'ra'}
-積集合
-{'ap', 'pa', 'ar', 'ra'}
-差集合
-{'di', 'ad', 'se', 'is'}
-{'ag', 'ph', 'gr'}
+{'se', 'is', 'ad', 'di'}
+{'ag', 'gr', 'ph'}
 seはXに含まれる
