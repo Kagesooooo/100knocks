@@ -62,7 +62,7 @@ url = 'http://ja.wikipedia.org/w/api.php?'
 
 url += 'format=json&action=query&prop=imageinfo&iiprop=url&titles=File:' + s
 
-req = urllib.request.Request(url=url)
+req = urllib.request.Request(url)
 
 f = urllib.request.urlopen(req)
 
