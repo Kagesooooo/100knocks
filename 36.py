@@ -14,4 +14,4 @@ with open('neko.txt.mecab')as f:
             wd_dic[sur] += 1
 
 for k, v in sorted(wd_dic.items(), key=lambda x: -x[1]):
-    print(k + ": " + str(v))
+    print(k + " " + str(v))
