@@ -8,6 +8,7 @@ with open('neko.txt.mecab')as f:
     for s in f:
         match = pattern.match(s)
         if match == None:
+            print()
             break
         dic['surface'] = match.group(1)
         dic['base'] = match.group(8).split(',')[0]
