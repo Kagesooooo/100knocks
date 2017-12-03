@@ -1,20 +1,21 @@
 import re
 
 with open('neko.txt.mecab')as f:
+    pattern = re.compile(r'^(.+?)\t(.+?),(.+?),(.+?),(.+?),(.+?),(.+?),(.+?)$')
     dic = {}
     pre = {}
-    flag = 0
+    flag = False
     for s in f:
-        if re.search('EOS',s):
+        match = pattern.match(s)
+        if match == None:
             break
-        line = re.split(r'[\t,]',s[:-1])
-        dic['surface'] = line[0]
-        dic['pos'] = line[1]
-        if flag == 1 and dic['pos'] == '名詞':
+        dic['surface'] = match.group(1)
+        dic['pos'] = match.group(2)
+        if flag == True and dic['pos'] == '名詞':
             print(st + 'の' + dic['surface'])
         if dic['surface'] == 'の' and pre['pos'] == '名詞':
             st = pre['surface']
-            flag = 1
+            flag = True
         else:
-            flag = 0
+            flag = False
         pre = dic.copy()

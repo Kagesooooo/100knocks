@@ -1,6 +1,20 @@
-import matplotlib.pyplot as plt
+import re
+import func3
 
-left = [1, 2, 3, 4, 5] # 横軸(棒の左端の位置)
-height = [3, 5, 1, 2, 3] # 値
-plt.bar(left, height)
-plt.show()
+dic = {}
+i = 0
+list0 = [[]]
+pattern = re.compile(r'^(.+?)\t(.+?),(.+?),(.+?),(.+?),(.+?),(.+?),(.+?)$')
+for s in func3.file_in():
+    match = pattern.match(s)
+    if match == None:
+        break
+    dic['surface'] = match.group(1)
+    dic['base'] = match.group(8)
+    dic['pos'] = match.group(2)
+    dic['pos1'] = match.group(3)
+    list0[i].append(dic.copy())
+    if dic['pos'] == '記号':
+        i += 1
+        list0.append([])
+print(list0)

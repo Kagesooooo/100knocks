@@ -1,14 +1,11 @@
 import re
 
 with open('neko.txt.mecab')as f:
-    dic = {}
+    pattern = re.compile(r'^(.+?)\t(.+?),(.+?),(.+?),(.+?),(.+?),(.+?),(.+?)$')
     for s in f:
-        if re.search('EOS',s):
+        match = pattern.match(s)
+        if match == None:
             break
-        line = re.split(r'[\t,]',s[:-1])
-        dic['surface'] = line[0]
-        dic['pos'] = line[1]
-        dic['pos1'] = line[2]
-        if dic['pos'] == '名詞':
-            if dic['pos1'] == 'サ変接続':
-                print(dic['surface'])
+        if match.group(2) == '名詞':
+            if match.group(3) == 'サ変接続':
+                print(match.group(1))

@@ -6,19 +6,18 @@ from matplotlib.font_manager import FontProperties
 fp = FontProperties(fname='/System/Library/Fonts/ヒラギノ角ゴシック W2.ttc')
 
 with open('neko.txt.mecab')as f:
-    dic = {}
+    pattern = re.compile(r'^(.+?)\t(.+?),(.+?),(.+?),(.+?),(.+?),(.+?),(.+?)$')
     wd_dic = {}
     for s in f:
-        if re.search('EOS',s):
+        match = pattern.match(s)
+        if match == None:
             break
-        line = re.split(r'[\t,]',s[:-1])
-        dic['surface'] = line[0]
-        if dic['surface'] not in wd_dic:
-            wd_dic[dic['surface']] = 1
+        sur = match.group(1)
+        if sur not in wd_dic:
+            wd_dic[sur] = 1
         else:
-            wd_dic[dic['surface']] += 1
+            wd_dic[sur] += 1
 
-# print(wd_dic)
 i = 0
 a = []
 b = []
