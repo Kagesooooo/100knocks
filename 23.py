@@ -13,4 +13,4 @@ text = jdata[eng]['text'].split('\n')
 for s in text:
     if '==' in s:
         num = int(s.count('=')/2)
-        print(s[num:-num].lstrip(' ') + ' ' + str(num-1))
+        print(str(num-1) + ' ' + s[num:-num].lstrip(' '))
