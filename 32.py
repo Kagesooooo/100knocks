@@ -1,6 +1,6 @@
 import re
 
-with open('neko.txt.mecab')as f:
+with open('../Downloads/neko.txt.mecab')as f:
     pattern = re.compile(r'^(.+?)\t(.+?),(.+?),(.+?),(.+?),(.+?),(.+?),(.+?),(.+?),(.+?)$')
     for s in f:
         match = pattern.match(s)
