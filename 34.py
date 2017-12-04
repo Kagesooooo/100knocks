@@ -8,7 +8,7 @@ with open('neko.txt.mecab')as f:
     for s in f:
         match = pattern.match(s)
         if match == None:
-            break
+            continue
         dic['surface'] = match.group(1)
         dic['pos'] = match.group(2)
         if flag == True and dic['pos'] == '名詞':
