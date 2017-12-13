@@ -1,0 +1,8 @@
+morphs: この, dst: 1, srcs: 0
+morphs: 書生というのは, dst: 7, srcs: 1
+morphs: 時々, dst: 4, srcs: 2
+morphs: 我々を, dst: 4, srcs: 3
+morphs: 捕えて, dst: 5, srcs: 4
+morphs: 煮て, dst: 6, srcs: 5
+morphs: 食うという, dst: 7, srcs: 6
+morphs: 話である, dst: -1, srcs: 7

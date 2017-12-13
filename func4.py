@@ -6,6 +6,10 @@ class Morph:
         self.base = base
         self.pos = pos
         self.pos1 = pos1
+    def is_noun(self):
+        return self.pos=='名詞'
+    def is_verb(self):
+        return self.pos=='動詞'
     def __str__(self):
         return '{}'.format(self.surface)
 
@@ -14,8 +18,11 @@ class Chunk:
         self.morphs = morphs
         self.dst = dst
         self.srcs = srcs
+        self.st = ''
+        for v in self.morphs:
+            self.st += str(v)
     def __str__(self):
-        return 'morphs: {}, dst: {}, srcs: {}'.format([str(v) for v in self.morphs],self.dst,self.srcs)
+        return 'morphs: {}, dst: {}, srcs: {}'.format(self.st,self.dst,self.srcs)
 
 def mk_chunk(file_name):
     with open(file_name) as f:
@@ -42,6 +49,8 @@ def mk_chunk(file_name):
                     sens = []
                 continue
             else:
+                if sen[1] == '記号':
+                    continue
                 morph = Morph(surface=sen[0],base=sen[7],pos=sen[1],pos1=sen[2])
                 morphs0.append(morph)
         return sen_list
