@@ -8,7 +8,7 @@ with open('neko.txt.mecab')as f:
     for s in f:
         match = pattern.match(s)
         if match == None:
-            break
+            continue
         sur = match.group(1)
         if sur not in wd_dic:
             wd_dic[sur] = 1

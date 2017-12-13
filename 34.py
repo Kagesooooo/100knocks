@@ -8,6 +8,7 @@ with open('../Downloads/neko.txt.mecab')as f:
     for s in f:
         match = pattern.match(s)
         if match == None:
+            
             continue
         dic['surface'] = match.group(1)
         dic['pos'] = match.group(2)

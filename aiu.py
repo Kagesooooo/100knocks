@@ -1,22 +1,5 @@
-import re
+import func4
 
-with open('neko.txt.mecab')as f:
-    dic = {}
-    i = 0
-    list0 = [[]]
-    pattern = re.compile(r'^(.+?)\t(.+?),(.+?),(.+?),(.+?),(.+?),(.+?),(.+?)$')
-    for s in f:
-        match = pattern.match(s)
-        if match == None:
-            print()
-            break
-        dic['surface'] = match.group(1)
-        dic['base'] = match.group(8).split(',')[0]
-        dic['pos'] = match.group(2)
-        dic['pos1'] = match.group(3)
-        print(dic['surface'],dic['base'],dic['pos'],dic['pos1'])
-        list0[i].append(dic.copy())
-        if dic['surface'] == '。':
-            i += 1
-            list0.append([])
-            print()
+list0 = func4.mk_morph()
+for v in list0[2]:
+    print(vars(v))
