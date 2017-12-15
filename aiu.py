@@ -1,22 +1,14 @@
-from graphviz import Digraph
+import func4
 
-# formatはpngを指定(他にはPDF, PNG, SVGなどが指定可)
-G = Digraph(format='png')
-G.attr('node', shape='circle')
+list0 = func4.mk_chunk('neko.txt.cabocha')
 
-N = 15    # ノード数
+# for sen in list0:
+#     for i in range(len(sen)):
+#         if (sen[i].has_verb() and len(sen[i].srcs)>0):
+#             for j in range(len(sen)):
+#                 if (sen[j].has_noun() and (sen[j].num in sen[i].srcs)):
+#                     print(sen[i].st + ' ' + sen[j].st)
 
-# ノードの追加
-for i in range(N):
-    G.node(str(i), str(i))
-
-# 辺の追加
-for i in range(N):
-    if (i - 1) // 2 >= 0:
-        G.edge(str((i - 1) // 2), str(i))
-
-# print()するとdot形式で出力される
-print(G)
-
-# binary_tree.pngで保存
-G.render('binary_tree')
+for s in list0[4:6]:
+    for c in s:
+        print(c.rpl_noun())

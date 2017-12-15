@@ -6,11 +6,11 @@ G.attr("node", shape="circle")
 
 list0 = func4.mk_chunk('neko.txt.cabocha')
 
-for sen in list0[2:5]:
-    for i in range(len(sen)):
-        x = sen[i].dst
-        for j in range(len(sen)):
-            if sen[j].srcs == x:
-                print(sen[i].st + ' ' + sen[j].st)
-                G.edge(sen[i].st,sen[j].st)
+for sen in list0[:5]:
+    for c0 in sen:
+        for c1 in sen:
+            if c1.num in c0.srcs:
+                G.edge(c1.st,c0.st)
+
+
 G.render("output/44")

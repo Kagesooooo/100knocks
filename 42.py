@@ -3,8 +3,7 @@ import func4
 list0 = func4.mk_chunk('neko.txt.cabocha')
 
 for sen in list0:
-    for i in range(len(sen)):
-        x = sen[i].dst
-        for j in range(len(sen)):
-            if sen[j].srcs == x:
-                print(sen[i].st + ' ' + sen[j].st)
+    for c0 in sen:
+        for c1 in sen:
+            if c0.num in c1.srcs:
+                print(c0.st + '\t' + c1.st)
