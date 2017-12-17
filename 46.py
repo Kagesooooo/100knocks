@@ -8,10 +8,13 @@ for sen in list0:
             flag = False
             st0 = ''
             st1 = ''
+            dic0 = {}
             for c1 in sen:
                 if (c1.dst == c0.num and c1.has_particle()):
                     flag = True
-                    st0 += c1.right_par() + ' '
-                    st1 += c1.st + ' '
+                    dic0[c1.right_par()] = c1.st
+            for s in sorted(dic0.items()):
+                st0 += s[0] + ' '
+                st1 += s[1] + ' '
             if flag:
                 print(c0.left_verb()+'\t'+st0+'\t'+st1)

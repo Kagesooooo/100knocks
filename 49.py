@@ -43,7 +43,7 @@ for sen in list0:
                             sty = l1[0].rpl_noun().replace('X','Y')
                             print(stx+sty)
                         else:
-                            st = ' |'
+                            st = ' | '
                             for m in l1[x:]:
                                 st += m.st
                             for s in st0:
