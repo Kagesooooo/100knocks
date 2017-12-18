@@ -17,5 +17,4 @@ for sen in list0:
                 st0 += s[0] + ' '
                 st1 += s[1] + ' '
             if flag:
-                # print(c0.left_verb()+'\t'+st0[:-1]+'\t'+st1[:-1])
                 print(c0.st+'\t'+st0[:-1]+'\t'+st1[:-1])

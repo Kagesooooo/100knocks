@@ -62,3 +62,15 @@ for sen in list0:
                     st0.append(v0)
                     st1 = []
                     flag0 = False
+
+    else:
+        if len(list0) != 0:
+            for s in list0:
+                for t in s:
+                    if t == s[0]:
+                        st0 = t.rpl_noun() + ' -> '
+                    elif t == s[-1]:
+                        st0 += t.rpl_noun().replace('X','Y')
+                    else:
+                        st0 += t.st + ' -> '
+            print(st0)
