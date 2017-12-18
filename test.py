@@ -1,9 +1,9 @@
 import func4
 import re
 
-list0 = func4.mk_chunk('neko.txt.cabocha')
+lista = func4.mk_chunk('neko.txt.cabocha')
 
-for sen in list0:
+for sen in lista[:5]:
     list0 = []
     for c0 in sen:
         if c0.has_noun():
@@ -43,7 +43,7 @@ for sen in list0:
                             sty = l1[0].rpl_noun().replace('X','Y')
                             print(stx+sty)
                         else:
-                            st = ' |'
+                            st = ' | '
                             for m in l1[x:]:
                                 st += m.st
                             for s in st0:
@@ -51,7 +51,7 @@ for sen in list0:
                                     stx += s.rpl_noun()
                                 else:
                                     stx += ' -> ' + s.st
-                            sty += '| '
+                            sty += ' | '
                             for s in st1:
                                 if s == st1[0]:
                                     sty += s.rpl_noun().replace('X','Y')

@@ -15,4 +15,4 @@ for sen in list0:
             for s in  sorted(list1):
                 st0 += s + ' '
             if flag:
-                print(c0.left_verb() + '\t' + st0)
+                print(c0.left_verb() + '\t' + st0[:-1])

@@ -2,7 +2,7 @@ import func4
 
 list0 = func4.mk_chunk('neko.txt.cabocha')
 
-for sen in list0:
+for sen in list0[:5]:
     for c0 in sen:
         if c0.has_noun():
             x = c0.dst
