@@ -62,9 +62,14 @@ class Chunk:
                 return v.base
     def rpl_noun(self):
         st = ''
+        flag = False
         for v in self.morphs:
             if v.pos == '名詞':
-                st += 'X'
+                if flag:
+                    continue
+                else:
+                    st += 'X'
+                    flag = True
             else:
                 st += v.surface
         return st

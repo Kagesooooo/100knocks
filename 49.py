@@ -51,7 +51,7 @@ for sen in list0:
                                     stx += s.rpl_noun()
                                 else:
                                     stx += ' -> ' + s.st
-                            sty += '| '
+                            sty += ' | '
                             for s in st1:
                                 if s == st1[0]:
                                     sty += s.rpl_noun().replace('X','Y')
