@@ -1,64 +1,21 @@
 import func4
-import re
+from collections import defaultdict
 
-lista = func4.mk_chunk('neko.txt.cabocha')
+list0 = func4.mk_chunk('neko.txt.cabocha')
 
-for sen in lista[:5]:
-    list0 = []
+for sen in list0:
     for c0 in sen:
-        if c0.has_noun():
-            x = c0.dst
-            list1 = [c0]
+        if c0.has_verb():
+            flag = False
+            st0 = ''
+            st1 = ''
+            dic0 = defaultdict(list)
             for c1 in sen:
-                if x == c1.num:
-                    x = c1.dst
-                    list1.append(c1)
-            if len(list1) == 1:
-                break
-            list0.append(list1)
-
-    if len(list0) > 1:
-        for i, l0 in enumerate(list0):
-            for l1 in list0[i+1:]:
-                st0 = []
-                st1 = []
-                flag0 = False
-                for v0 in l0:
-                    for j,v1 in enumerate(l1):
-                        if v0 == v1:
-                            x = j
-                            flag0 = True
-                            break
-                        st1.append(v1)
-                    if flag0:
-                        st = ''
-                        stx = ''
-                        sty = ''
-                        if x == 0:
-                            for s in st0:
-                                if s == st0[0]:
-                                    stx += s.rpl_noun() + ' -> '
-                                else:
-                                    stx += s.st + ' -> '
-                            sty = l1[0].rpl_noun().replace('X','Y')
-                            print(stx+sty)
-                        else:
-                            st = ' | '
-                            for m in l1[x:]:
-                                st += m.st
-                            for s in st0:
-                                if s == st0[0]:
-                                    stx += s.rpl_noun()
-                                else:
-                                    stx += ' -> ' + s.st
-                            sty += ' | '
-                            for s in st1:
-                                if s == st1[0]:
-                                    sty += s.rpl_noun().replace('X','Y')
-                                else:
-                                    sty += ' -> ' + s.st
-                            print(stx+sty+st)
-                        break
-                    st0.append(v0)
-                    st1 = []
-                    flag0 = False
+                if (c1.dst == c0.num and c1.has_particle() and c1.has_sahen()):
+                    flag = True
+                    dic0[c1.right_par()].append(c1.st)
+            for s in sorted(dic0.items()):
+                st0 += s[0] + ' '
+                st1 += ' '.join(s[1])
+            if flag:
+                print(c0.st+'\t'+st0[:-1]+'\t'+st1[:-1])
