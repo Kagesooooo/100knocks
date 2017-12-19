@@ -16,6 +16,6 @@ for sen in list0:
                     dic0[c1.right_par()].append(c1.st)
             for s in sorted(dic0.items()):
                 st0 += (s[0] + ' ') * len(s[1])
-                st1 += ' '.join(s[1])
+                st1 += ' '.join(s[1]) + ' '
             if flag:
-                print(c0.left_verb()+'\t'+st0[:-1]+'\t'+st1)
+                print(c0.left_verb()+'\t'+st0[:-1]+'\t'+st1[:-1])
