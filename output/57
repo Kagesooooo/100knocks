@@ -1,0 +1,99 @@
+digraph {
+	node [shape=circle]
+	0 [label=ROOT]
+	18 [label=field]
+	0 -> 18
+	3 [label=processing]
+	1 [label=Natural]
+	3 -> 1
+	3 [label=processing]
+	2 [label=language]
+	3 -> 2
+	18 [label=field]
+	3 [label=processing]
+	18 -> 3
+	3 [label=processing]
+	4 [label=From]
+	3 -> 4
+	3 [label=processing]
+	5 [label=Wikipedia]
+	3 -> 5
+	12 [label=processing]
+	7 [label=the]
+	12 -> 7
+	12 [label=processing]
+	8 [label=free]
+	12 -> 8
+	12 [label=processing]
+	9 [label=encyclopedia]
+	12 -> 9
+	12 [label=processing]
+	10 [label=Natural]
+	12 -> 10
+	12 [label=processing]
+	11 [label=language]
+	12 -> 11
+	18 [label=field]
+	12 [label=processing]
+	18 -> 12
+	12 [label=processing]
+	14 [label=NLP]
+	12 -> 14
+	18 [label=field]
+	16 [label=is]
+	18 -> 16
+	18 [label=field]
+	17 [label=a]
+	18 -> 17
+	21 [label=science]
+	19 [label=of]
+	21 -> 19
+	21 [label=science]
+	20 [label=computer]
+	21 -> 20
+	18 [label=field]
+	21 [label=science]
+	18 -> 21
+	24 [label=intelligence]
+	23 [label=artificial]
+	24 -> 23
+	18 [label=field]
+	24 [label=intelligence]
+	18 -> 24
+	18 [label=field]
+	26 [label=and]
+	18 -> 26
+	18 [label=field]
+	27 [label=linguistics]
+	18 -> 27
+	27 [label=linguistics]
+	28 [label=concerned]
+	27 -> 28
+	31 [label=interactions]
+	29 [label=with]
+	31 -> 29
+	31 [label=interactions]
+	30 [label=the]
+	31 -> 30
+	28 [label=concerned]
+	31 [label=interactions]
+	28 -> 31
+	33 [label=computers]
+	32 [label=between]
+	33 -> 32
+	31 [label=interactions]
+	33 [label=computers]
+	31 -> 33
+	33 [label=computers]
+	34 [label=and]
+	33 -> 34
+	39 [label=languages]
+	35 [label=human]
+	39 -> 35
+	39 [label=languages]
+	37 [label=natural]
+	39 -> 37
+	33 [label=computers]
+	39 [label=languages]
+	33 -> 39
+}
