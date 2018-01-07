@@ -1,25 +1,23 @@
 Natural	Natur
 language	languag
 processing	process
-	
 From	From
-Wikipedia	Wikipedia
+Wikipedia,	Wikipedia,
 the	the
 free	free
 encyclopedia	encyclopedia
-	
 Natural	Natur
 language	languag
 processing	process
-NLP	NLP
+(NLP)	(NLP)
 is	is
 a	a
 field	field
 of	of
 computer	comput
-science	scienc
+science,	science,
 artificial	artifici
-intelligence	intellig
+intelligence,	intelligence,
 and	and
 linguistics	linguist
 concerned	concern
@@ -30,11 +28,10 @@ between	between
 computers	comput
 and	and
 human	human
-natural	natur
-languages	languag
-	
+(natural)	(natural)
+languages.	languages.
 As	As
-such	such
+such,	such,
 NLP	NLP
 is	is
 related	relat
@@ -42,9 +39,8 @@ to	to
 the	the
 area	area
 of	of
-humanicomputer	humanicomput
-interaction	interact
-	
+humani-computer	humani-comput
+interaction.	interaction.
 Many	Mani
 challenges	challeng
 in	in
@@ -52,9 +48,9 @@ NLP	NLP
 involve	involv
 natural	natur
 language	languag
-understanding	understand
+understanding,	understanding,
 that	that
-is	is
+is,	is,
 enabling	enabl
 computers	comput
 to	to
@@ -65,16 +61,14 @@ human	human
 or	or
 natural	natur
 language	languag
-input	input
+input,	input,
 and	and
 others	other
 involve	involv
 natural	natur
 language	languag
-generation	generat
-	
+generation.	generation.
 History	Histori
-	
 The	The
 history	histori
 of	of
@@ -83,7 +77,7 @@ generally	general
 starts	start
 in	in
 the	the
-1950s	1950s
+1950s,	1950s,
 although	although
 work	work
 can	can
@@ -91,20 +85,19 @@ be	be
 found	found
 from	from
 earlier	earlier
-periods	period
-	
+periods.	periods.
 In	In
-1950	1950
+1950,	1950,
 Alan	Alan
 Turing	Ture
 published	publish
 an	an
 article	articl
 titled	titl
-Computing	Comput
+"Computing	"Comput
 Machinery	Machineri
 and	and
-Intelligence	Intellig
+Intelligence"	Intelligence"
 which	which
 proposed	propos
 what	what
@@ -118,8 +111,7 @@ as	as
 a	a
 criterion	criterion
 of	of
-intelligence	intellig
-	
+intelligence.	intelligence.
 The	The
 Georgetown	Georgetown
 experiment	experi
@@ -136,8 +128,7 @@ sixty	sixti
 Russian	Russian
 sentences	sentenc
 into	into
-English	English
-	
+English.	English.
 The	The
 authors	author
 claimed	claim
@@ -146,28 +137,27 @@ within	within
 three	three
 or	or
 five	five
-years	year
+years,	years,
 machine	machin
 translation	translat
 would	would
 be	be
 a	a
 solved	solv
-problem	problem
-	
-However	Howev
+problem.	problem.
+However,	However,
 real	real
 progress	progress
 was	was
 much	much
-slower	slower
+slower,	slower,
 and	and
 after	after
 the	the
 ALPAC	ALPAC
 report	report
 in	in
-1966	1966
+1966,	1966,
 which	which
 found	found
 that	that
@@ -180,15 +170,14 @@ failed	fail
 to	to
 fulfill	fulfil
 the	the
-expectations	expect
+expectations,	expectations,
 funding	fund
 for	for
 machine	machin
 translation	translat
 was	was
 dramatically	dramat
-reduced	reduc
-	
+reduced.	reduced.
 Little	Littl
 further	further
 research	research
@@ -200,7 +189,7 @@ conducted	conduct
 until	until
 the	the
 late	late
-1980s	1980s
+1980s,	1980s,
 when	when
 the	the
 first	first
@@ -209,8 +198,7 @@ machine	machin
 translation	translat
 systems	system
 were	were
-developed	develop
-	
+developed.	developed.
 Some	Some
 notably	notabl
 successful	success
@@ -221,7 +209,7 @@ in	in
 the	the
 1960s	1960s
 were	were
-SHRDLU	SHRDLU
+SHRDLU,	SHRDLU,
 a	a
 natural	natur
 language	languag
@@ -229,19 +217,19 @@ system	system
 working	work
 in	in
 restricted	restrict
-blocks	block
-worlds	world
+"blocks	"block
+worlds"	worlds"
 with	with
 restricted	restrict
-vocabularies	vocabulari
+vocabularies,	vocabularies,
 and	and
-ELIZA	ELIZA
+ELIZA,	ELIZA,
 a	a
 simulation	simul
 of	of
 a	a
 Rogerian	Rogerian
-psychotherapist	psychotherapist
+psychotherapist,	psychotherapist,
 written	written
 by	by
 Joseph	Joseph
@@ -249,8 +237,7 @@ Weizenbaum	Weizenbaum
 between	between
 1964	1964
 to	to
-1966	1966
-	
+1966.	1966.
 Using	Using
 almost	almost
 no	no
@@ -259,46 +246,44 @@ about	about
 human	human
 thought	thought
 or	or
-emotion	emot
+emotion,	emotion,
 ELIZA	ELIZA
 sometimes	sometim
 provided	provid
 a	a
 startlingly	startl
-humanlike	humanlik
-interaction	interact
-	
+human-like	human-lik
+interaction.	interaction.
 When	When
 the	the
-patient	patient
+"patient"	"patient"
 exceeded	exceed
 the	the
 very	veri
 small	small
 knowledge	knowledg
-base	base
+base,	base,
 ELIZA	ELIZA
 might	might
 provide	provid
 a	a
 generic	generic
-response	respons
+response,	response,
 for	for
-example	exampl
+example,	example,
 responding	respond
 to	to
-My	My
+"My	"Mi
 head	head
-hurts	hurt
+hurts"	hurts"
 with	with
-Why	Whi
+"Why	"Whi
 do	do
 you	you
 say	say
 your	your
 head	head
-hurts?	hurts?
-	
+hurts?".	hurts?".
 During	Dure
 the	the
 1970s	1970s
@@ -308,58 +293,55 @@ began	began
 to	to
 write	write
 'conceptual	conceptu
-ontologies'	ontolog
+ontologies',	ontologies',
 which	which
 structured	structur
-realworld	realworld
+real-world	real-world
 information	inform
 into	into
-computerunderstandable	computerunderstand
-data	data
-	
+computer-understandable	computer-understand
+data.	data.
 Examples	Exampl
 are	are
 MARGIE	MARGIE
-Schank	Schank
-1975	1975
+(Schank,	(Schank,
+1975),	1975),
 SAM	SAM
-Cullingford	Cullingford
-1978	1978
+(Cullingford,	(Cullingford,
+1978),	1978),
 PAM	PAM
-Wilensky	Wilenski
-1978	1978
+(Wilensky,	(Wilensky,
+1978),	1978),
 TaleSpin	TaleSpin
-Meehan	Meehan
-1976	1976
+(Meehan,	(Meehan,
+1976),	1976),
 QUALM	QUALM
-Lehnert	Lehnert
-1977	1977
+(Lehnert,	(Lehnert,
+1977),	1977),
 Politics	Polit
-Carbonell	Carbonel
-1979	1979
+(Carbonell,	(Carbonell,
+1979),	1979),
 and	and
 Plot	Plot
 Units	Unit
-Lehnert	Lehnert
-1981	1981
-	
+(Lehnert	(Lehnert
+1981).	1981).
 During	Dure
 this	this
-time	time
+time,	time,
 many	mani
 chatterbots	chatterbot
 were	were
 written	written
 including	includ
-PARRY	PARRi
-Racter	Racter
+PARRY,	PARRy,
+Racter,	Racter,
 and	and
-Jabberwacky	Jabberwacki
-	
+Jabberwacky.	Jabberwacky.
 Up	Up
 to	to
 the	the
-1980s	1980s
+1980s,	1980s,
 most	most
 NLP	NLP
 systems	system
@@ -369,15 +351,14 @@ on	on
 complex	complex
 sets	set
 of	of
-handwritten	handwritten
-rules	rule
-	
+hand-written	hand-written
+rules.	rules.
 Starting	Start
 in	in
 the	the
 late	late
-1980s	1980s
-however	howev
+1980s,	1980s,
+however,	however,
 there	there
 was	was
 a	a
@@ -393,8 +374,7 @@ learning	learn
 algorithms	algorithm
 for	for
 language	languag
-processing	process
-	
+processing.	processing.
 This	This
 was	was
 due	due
@@ -422,10 +402,9 @@ Chomskyan	Chomskyan
 theories	theori
 of	of
 linguistics	linguist
-eg	eg
-	
+(e.g.	(e.g.
 transformational	transform
-grammar	grammar
+grammar),	grammar),
 whose	whose
 theoretical	theoret
 underpinnings	underpin
@@ -438,36 +417,34 @@ linguistics	linguist
 that	that
 underlies	under
 the	the
-machinelearning	machinelearn
+machine-learning	machine-learn
 approach	approach
 to	to
 language	languag
-processing	process
-	
+processing.	processing.
 Some	Some
 of	of
 the	the
-earliestused	earliestus
+earliest-used	earliest-us
 machine	machin
 learning	learn
-algorithms	algorithm
+algorithms,	algorithms,
 such	such
 as	as
 decision	decis
-trees	tree
+trees,	trees,
 produced	produc
 systems	system
 of	of
 hard	hard
-ifthen	ifthen
+if-then	if-then
 rules	rule
 similar	similar
 to	to
 existing	exist
-handwritten	handwritten
-rules	rule
-	
-However	Howev
+hand-written	hand-written
+rules.	rules.
+However,	However,
 Part	Part
 of	of
 speech	speech
@@ -480,24 +457,24 @@ Hidden	Hidden
 Markov	Markov
 Models	Model
 to	to
-NLP	NLP
+NLP,	NLP,
 and	and
-increasingly	increas
+increasingly,	increasingly,
 research	research
 has	has
 focused	focus
 on	on
 statistical	statist
-models	model
+models,	models,
 which	which
 make	make
-soft	soft
+soft,	soft,
 probabilistic	probabilist
 decisions	decis
 based	base
 on	on
 attaching	attach
-realvalued	realvalu
+real-valued	real-valu
 weights	weight
 to	to
 the	the
@@ -506,8 +483,7 @@ making	make
 up	up
 the	the
 input	input
-data	data
-	
+data.	data.
 The	The
 cache	cach
 language	languag
@@ -525,8 +501,7 @@ examples	exampl
 of	of
 such	such
 statistical	statist
-models	model
-	
+models.	models.
 Such	Such
 models	model
 are	are
@@ -536,19 +511,19 @@ robust	robust
 when	when
 given	given
 unfamiliar	unfamiliar
-input	input
+input,	input,
 especially	especi
 input	input
 that	that
 contains	contain
 errors	error
-as	as
+(as	(as
 is	is
 very	veri
 common	common
 for	for
-realworld	realworld
-data	data
+real-world	real-world
+data),	data),
 and	and
 produce	produc
 more	more
@@ -562,8 +537,7 @@ larger	larger
 system	system
 comprising	compris
 multiple	multipl
-subtasks	subtask
-	
+subtasks.	subtasks.
 Many	Mani
 of	of
 the	the
@@ -576,14 +550,14 @@ the	the
 field	field
 of	of
 machine	machin
-translation	translat
+translation,	translation,
 due	due
 especially	especi
 to	to
 work	work
 at	at
 IBM	IBM
-Research	Research
+Research,	Research,
 where	where
 successively	success
 more	more
@@ -591,8 +565,7 @@ complicated	complic
 statistical	statist
 models	model
 were	were
-developed	develop
-	
+developed.	developed.
 These	These
 systems	system
 were	were
@@ -640,9 +613,8 @@ the	the
 corresponding	correspond
 systems	system
 of	of
-government	govern
-	
-However	Howev
+government.	government.
+However,	However,
 most	most
 other	other
 systems	system
@@ -657,14 +629,14 @@ tasks	task
 implemented	implement
 by	by
 these	these
-systems	system
+systems,	systems,
 which	which
 was	was
-and	and
+(and	(and
 often	often
 continues	continu
 to	to
-be	be
+be)	be)
 a	a
 major	major
 limitation	limit
@@ -673,11 +645,10 @@ the	the
 success	success
 of	of
 these	these
-systems	system
-	
+systems.	systems.
 As	As
 a	a
-result	result
+result,	result,
 a	a
 great	great
 deal	deal
@@ -695,8 +666,7 @@ from	from
 limited	limit
 amounts	amount
 of	of
-data	data
-	
+data.	data.
 Recent	Recent
 research	research
 has	has
@@ -705,10 +675,9 @@ focused	focus
 on	on
 unsupervised	unsupervis
 and	and
-semisupervised	semisupervis
+semi-supervised	semi-supervis
 learning	learn
-algorithms	algorithm
-	
+algorithms.	algorithms.
 Such	Such
 algorithms	algorithm
 are	are
@@ -721,11 +690,11 @@ that	that
 has	has
 not	not
 been	been
-handannotated	handannot
+hand-annotated	hand-annot
 with	with
 the	the
 desired	desir
-answers	answer
+answers,	answers,
 or	or
 using	use
 a	a
@@ -733,10 +702,9 @@ combination	combin
 of	of
 annotated	annot
 and	and
-nonannotated	nonannot
-data	data
-	
-Generally	Gener
+non-annotated	non-annot
+data.	data.
+Generally,	Generally,
 this	this
 task	task
 is	is
@@ -745,7 +713,7 @@ more	more
 difficult	difficult
 than	than
 supervised	supervis
-learning	learn
+learning,	learning,
 and	and
 typically	typic
 produces	produc
@@ -758,22 +726,21 @@ given	given
 amount	amount
 of	of
 input	input
-data	data
-	
-However	Howev
+data.	data.
+However,	However,
 there	there
 is	is
 an	an
 enormous	enorm
 amount	amount
 of	of
-nonannotated	nonannot
+non-annotated	non-annot
 data	data
 available	avail
-including	includ
+(including,	(including,
 among	among
 other	other
-things	thing
+things,	things,
 the	the
 entire	entir
 content	content
@@ -781,7 +748,7 @@ of	of
 the	the
 World	World
 Wide	Wide
-Web	Web
+Web),	Web),
 which	which
 can	can
 often	often
@@ -790,13 +757,11 @@ up	up
 for	for
 the	the
 inferior	inferior
-results	result
-	
+results.	results.
 NLP	NLP
 using	use
 machine	machin
 learning	learn
-	
 Modern	Modern
 NLP	NLP
 algorithms	algorithm
@@ -804,12 +769,11 @@ are	are
 based	base
 on	on
 machine	machin
-learning	learn
+learning,	learning,
 especially	especi
 statistical	statist
 machine	machin
-learning	learn
-	
+learning.	learning.
 The	The
 paradigm	paradigm
 of	of
@@ -825,12 +789,11 @@ prior	prior
 attempts	attempt
 at	at
 language	languag
-processing	process
-	
+processing.	processing.
 Prior	Prior
 implementations	implement
 of	of
-languageprocessing	languageprocess
+language-processing	language-process
 tasks	task
 typically	typic
 involved	involv
@@ -842,10 +805,9 @@ of	of
 large	larg
 sets	set
 of	of
-rules	rule
-	
+rules.	rules.
 The	The
-machinelearning	machinelearn
+machine-learning	machine-learn
 paradigm	paradigm
 calls	call
 instead	instead
@@ -854,16 +816,16 @@ using	use
 general	general
 learning	learn
 algorithms	algorithm
-	
-often	often
+-	-
+often,	often,
 although	although
 not	not
-always	alway
+always,	always,
 grounded	ground
 in	in
 statistical	statist
 inference	infer
-	
+-	-
 to	to
 automatically	automat
 learn	learn
@@ -877,34 +839,32 @@ large	larg
 corpora	corpora
 of	of
 typical	typic
-realworld	realworld
-examples	exampl
-	
+real-world	real-world
+examples.	examples.
 A	A
 corpus	corpus
-plural	plural
-corpora	corpora
+(plural,	(plural,
+"corpora")	"corpora")
 is	is
 a	a
 set	set
 of	of
 documents	document
-or	or
-sometimes	sometim
+(or	(or
+sometimes,	sometimes,
 individual	individu
-sentences	sentenc
+sentences)	sentences)
 that	that
 have	have
 been	been
-handannotated	handannot
+hand-annotated	hand-annot
 with	with
 the	the
 correct	correct
 values	valu
 to	to
 be	be
-learned	learn
-	
+learned.	learned.
 Many	Mani
 different	differ
 classes	class
@@ -917,8 +877,7 @@ been	been
 applied	appli
 to	to
 NLP	NLP
-tasks	task
-	
+tasks.	tasks.
 These	These
 algorithms	algorithm
 take	take
@@ -928,65 +887,62 @@ a	a
 large	larg
 set	set
 of	of
-features	featur
+"features"	"features"
 that	that
 are	are
 generated	generat
 from	from
 the	the
 input	input
-data	data
-	
+data.	data.
 Some	Some
 of	of
 the	the
-earliestused	earliestus
-algorithms	algorithm
+earliest-used	earliest-us
+algorithms,	algorithms,
 such	such
 as	as
 decision	decis
-trees	tree
+trees,	trees,
 produced	produc
 systems	system
 of	of
 hard	hard
-ifthen	ifthen
+if-then	if-then
 rules	rule
 similar	similar
 to	to
 the	the
 systems	system
 of	of
-handwritten	handwritten
+hand-written	hand-written
 rules	rule
 that	that
 were	were
 then	then
-common	common
-	
-Increasingly	Increas
-however	howev
+common.	common.
+Increasingly,	Increasingly,
+however,	however,
 research	research
 has	has
 focused	focus
 on	on
 statistical	statist
-models	model
+models,	models,
 which	which
 make	make
-soft	soft
+soft,	soft,
 probabilistic	probabilist
 decisions	decis
 based	base
 on	on
 attaching	attach
-realvalued	realvalu
+real-valued	real-valu
 weights	weight
 to	to
 each	each
 input	input
-feature	featur
-	
+feature.	feature.
 Such	Such
 models	model
 have	have
@@ -1007,7 +963,7 @@ answers	answer
 rather	rather
 than	than
 only	onli
-one	one
+one,	one,
 producing	produc
 more	more
 reliable	reliabl
@@ -1024,20 +980,18 @@ component	compon
 of	of
 a	a
 larger	larger
-system	system
-	
+system.	system.
 Systems	System
 based	base
 on	on
-machinelearning	machinelearn
+machine-learning	machine-learn
 algorithms	algorithm
 have	have
 many	mani
 advantages	advantag
 over	over
-handproduced	handproduc
+hand-produced	hand-produc
 rules:	rules:
-	
 The	The
 learning	learn
 procedures	procedur
@@ -1051,7 +1005,7 @@ on	on
 the	the
 most	most
 common	common
-cases	case
+cases,	cases,
 whereas	wherea
 when	when
 writing	write
@@ -1070,8 +1024,7 @@ the	the
 effort	effort
 should	should
 be	be
-directed	direct
-	
+directed.	directed.
 Automatic	Automat
 learning	learn
 procedures	procedur
@@ -1091,8 +1044,7 @@ robust	robust
 to	to
 unfamiliar	unfamiliar
 input	input
-eg	eg
-	
+(e.g.	(e.g.
 containing	contain
 words	word
 or	or
@@ -1102,47 +1054,46 @@ have	have
 not	not
 been	been
 seen	seen
-before	befor
+before)	before)
 and	and
 to	to
 erroneous	erron
 input	input
-eg	eg
+(e.g.	(e.g.
 with	with
 misspelled	misspel
 words	word
 or	or
 words	word
 accidentally	accident
-omitted	omit
-Generally	Gener
+omitted).	omitted).
+Generally,	Generally,
 handling	handl
 such	such
 input	input
 gracefully	grace
 with	with
-handwritten	handwritten
+hand-written	hand-written
 rules	rule
-	
+--	--
 or	or
 more	more
-generally	general
+generally,	generally,
 creating	creat
 systems	system
 of	of
-handwritten	handwritten
+hand-written	hand-written
 rules	rule
 that	that
 make	make
 soft	soft
 decisions	decis
-	
+--	--
 extremely	extrem
-difficult	difficult
-errorprone	errorpron
+difficult,	difficult,
+error-prone	error-pron
 and	and
-timeconsuming	timeconsum
-	
+time-consuming.	time-consuming.
 Systems	System
 based	base
 on	on
@@ -1160,13 +1111,12 @@ by	by
 supplying	suppli
 more	more
 input	input
-data	data
-	
-However	Howev
+data.	data.
+However,	However,
 systems	system
 based	base
 on	on
-handwritten	handwritten
+hand-written	hand-written
 rules	rule
 can	can
 only	onli
@@ -1180,17 +1130,16 @@ the	the
 complexity	complex
 of	of
 the	the
-rules	rule
+rules,	rules,
 which	which
 is	is
 a	a
 much	much
 more	more
 difficult	difficult
-task	task
-	
+task.	task.
 In	In
-particular	particular
+particular,	particular,
 there	there
 is	is
 a	a
@@ -1202,8 +1151,8 @@ of	of
 systems	system
 based	base
 on	on
-handcrafted	handcraft
-rules	rule
+hand-crafted	hand-craft
+rules,	rules,
 beyond	beyond
 which	which
 the	the
@@ -1212,16 +1161,15 @@ become	becom
 more	more
 and	and
 more	more
-unmanageable	unmanag
-	
-However	Howev
+unmanageable.	unmanageable.
+However,	However,
 creating	creat
 more	more
 data	data
 to	to
 input	input
 to	to
-machinelearning	machinelearn
+machine-learning	machine-learn
 systems	system
 simply	simpli
 requires	requir
@@ -1232,8 +1180,8 @@ in	in
 the	the
 number	number
 of	of
-manhours	manhour
-worked	work
+man-hours	man-hour
+worked,	worked,
 generally	general
 without	without
 significant	signific
@@ -1244,8 +1192,7 @@ complexity	complex
 of	of
 the	the
 annotation	annot
-process	process
-	
+process.	process.
 The	The
 subfield	subfield
 of	of
@@ -1260,7 +1207,7 @@ as	as
 Natural	Natur
 Language	Languag
 Learning	Learn
-NLL	NLL
+(NLL)	(NLL)
 and	and
 its	it
 conference	confer
@@ -1272,7 +1219,7 @@ SIGNLL	SIGNLL
 are	are
 sponsored	sponsor
 by	by
-ACL	ACL
+ACL,	ACL,
 recognizing	recogn
 also	also
 their	their
@@ -1282,8 +1229,7 @@ Computational	Comput
 Linguistics	Linguist
 and	and
 Language	Languag
-Acquisition	Acquisit
-	
+Acquisition.	Acquisition.
 When	When
 the	the
 aims	aim
@@ -1299,9 +1245,9 @@ more	more
 about	about
 human	human
 language	languag
-acquisition	acquisit
+acquisition,	acquisition,
 or	or
-psycholinguistics	psycholinguist
+psycholinguistics,	psycholinguistics,
 NLL	NLL
 overlaps	overlap
 into	into
@@ -1310,5 +1256,4 @@ related	relat
 field	field
 of	of
 Computational	Comput
-Psycholinguistics	Psycholinguist
-	
+Psycholinguistics.	Psycholinguistics.
