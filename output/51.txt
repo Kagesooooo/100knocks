@@ -423,7 +423,6 @@ theories
 of
 linguistics
 (e.g.
-
 transformational
 grammar),
 whose
@@ -1092,7 +1091,6 @@ to
 unfamiliar
 input
 (e.g.
-
 containing
 words
 or
@@ -1115,6 +1113,7 @@ or
 words
 accidentally
 omitted).
+
 Generally,
 handling
 such
