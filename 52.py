@@ -4,5 +4,4 @@ import re
 with open('output/51.txt')as fi:
     with open('output/52.txt','w')as fo:
         for l in fi:
-            if l != '\n':
-                fo.write(l[:-1] + '\t' + stem(l[:-1]) + '\n')
+            fo.write(l[:-1] + '\t' + stem(l[:-1]) + '\n')
