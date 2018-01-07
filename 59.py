@@ -1,6 +1,9 @@
 import xml.etree.ElementTree as ET
 import re
 
+tree = ET.parse('nlp.txt.xml')
+root = tree.getroot()
+
 def mk_nplist(str0):
     cnt0 = 0
     cnt1 = 0
@@ -17,7 +20,7 @@ def mk_nplist(str0):
             if cnt0 == cnt1:
                 list0.append(mk_nplist(st))
                 st = ''
-        elif not (cnt0 == cnt1 and char == ' '):
+        elif cnt0 != cnt1 or char != ' ':
             st += char
         else:
             continue
@@ -27,9 +30,6 @@ def mk_nplist(str0):
     if match.group(1) == 'NP':
         print(word)
     return word
-
-tree = ET.parse('nlp.txt.xml')
-root = tree.getroot()
 
 for parse in root.findall('document/sentences/sentence/parse'):
     mk_nplist(parse.text[:-1])
