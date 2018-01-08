@@ -17,8 +17,8 @@ for coref in root.findall('document/coreference/coreference'):
             dic[word]['start'].append(int(men.find('start').text)-1)
             dic[word]['end'].append(int(men.find('end').text)-1)
 
+sen = ''
 for i, sens in enumerate(root.findall('document/sentences/sentence')):
-    sen = ''
     for j, tok in enumerate(sens.findall('tokens/token')):
         for word in dic:
             for k in range(len(dic[word]['sentence'])):
@@ -28,4 +28,4 @@ for i, sens in enumerate(root.findall('document/sentences/sentence')):
                     if j == dic[word]['end'][k]:
                         sen = sen[:-1] + ')]' + ' '
         sen += tok.find('word').text + ' '
-    print(sen[:-1])
+print(sen[:-1])
