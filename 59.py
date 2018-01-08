@@ -32,7 +32,7 @@ def mk_nplist(str0):
         # print(list0)
     return word
 
-for parse in root.findall('document/sentences/sentence/parse')[:1]:
+for parse in root.findall('document/sentences/sentence/parse'):
     list1 = []
     list2 = []
     mk_nplist(parse.text[:-1])
