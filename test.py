@@ -1,7 +1,10 @@
 import xml.etree.ElementTree as ET
 import re
 
-def mk_nplist(str0):
+tree = ET.parse('nlp.txt.xml')
+root = tree.getroot()
+
+def mk_nplist(str0,cnt):
     cnt0 = 0
     cnt1 = 0
     st = ''
@@ -15,9 +18,9 @@ def mk_nplist(str0):
             st += char
             cnt1 += 1
             if cnt0 == cnt1:
-                list0.append(mk_nplist(st))
+                list0.append(mk_nplist(st,cnt+1))
                 st = ''
-        elif not (cnt0 == cnt1 and char == ' '):
+        elif cnt0 != cnt1 or char != ' ':
             st += char
         else:
             continue
@@ -25,11 +28,34 @@ def mk_nplist(str0):
         list0.append(st)
     word = ' '.join(list0)
     if match.group(1) == 'NP':
-        print(word)
+        list1.append(word)
+        listw.append(cnt)
+        print(word,cnt)
     return word
 
-tree = ET.parse('nlp.txt.xml')
-root = tree.getroot()
+for parse in root.findall('document/sentences/sentence/parse')[25:26]:
+    list1 = []
+    list2 = []
+    listw = []
+    cnt = 0
+    mk_nplist(parse.text[:-1],cnt)
+    # print(list1)
 
-for parse in root.findall('document/sentences/sentence/parse'):
-    mk_nplist(parse.text[:-1])
+
+
+
+    for i in range(len(list1[:-1])):
+        for j in range(len(list1))[::-1]:
+            if list1[i] in list1[j] and list1[i+1] in list1[j]:
+                if list1[j] not in list2:
+                    if listw[i] > listw[j]:
+                        list2.append(list1[j])
+            elif list1[i] == list1[j] and i != j:
+                list2.append(list1[j])
+        if list1[i] not in list2:
+            list2.append(list1[i])
+    if list1[-1] not in list2:
+        list2.append(list1[-1])
+
+    # for l in list2:
+    #     print(l)
