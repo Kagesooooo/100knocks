@@ -29,7 +29,10 @@ def mk_nplist(str0):
     word = ' '.join(list0)
     if match.group(1) == 'NP':
         print(word)
+        # print(list0)
     return word
 
-for parse in root.findall('document/sentences/sentence/parse'):
+for parse in root.findall('document/sentences/sentence/parse')[:1]:
+    list1 = []
+    list2 = []
     mk_nplist(parse.text[:-1])
