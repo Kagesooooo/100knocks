@@ -28,4 +28,4 @@ for i, sens in enumerate(root.findall('document/sentences/sentence')):
                     if j == dic[word]['end'][k]:
                         sen = sen[:-1] + ')]' + ' '
         sen += tok.find('word').text + ' '
-print(sen)
+print(sen[:-1])
