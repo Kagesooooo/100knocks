@@ -17,4 +17,4 @@ for sen in root.findall('document/sentences/sentence'):
 
     for idx in sorted(dic.keys()):
         if idx in dicn.keys() and idx in dicd.keys():
-            print(dicn[idx]+'\t'+dic[idx]+'\t'+dicd[idx]+'\t'+str(idx))
+            print(dicn[idx]+'\t'+dic[idx]+'\t'+dicd[idx])

@@ -1,23 +1,23 @@
-understanding	enabling	computers	13
-others	involve	generation	27
-Turing	published	article	6
-experiment	involved	translation	6
-ELIZA	provided	interaction	13
-patient	exceeded	base	6
-ELIZA	provide	response	15
-which	structured	information	15
-underpinnings	discouraged	sort	38
-that	underlies	approach	45
-Some	produced	systems	14
-which	make	decisions	28
-systems	rely	which	12
-that	contains	errors	15
-implementations	involved	coding	7
-algorithms	take	set	3
-Some	produced	systems	12
-which	make	decisions	13
-models	have	advantage	3
-they	express	certainty	9
-Systems	have	advantages	6
-Automatic	make	use	5
-that	make	decisions	21
+understanding	enabling	computers
+others	involve	generation
+Turing	published	article
+experiment	involved	translation
+ELIZA	provided	interaction
+patient	exceeded	base
+ELIZA	provide	response
+which	structured	information
+underpinnings	discouraged	sort
+that	underlies	approach
+Some	produced	systems
+which	make	decisions
+systems	rely	which
+that	contains	errors
+implementations	involved	coding
+algorithms	take	set
+Some	produced	systems
+which	make	decisions
+models	have	advantage
+they	express	certainty
+Systems	have	advantages
+Automatic	make	use
+that	make	decisions
