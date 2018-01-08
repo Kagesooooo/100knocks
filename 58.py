@@ -15,6 +15,6 @@ for sen in root.findall('document/sentences/sentence'):
             else:
                 dicd[dep.find('governor').get('idx')] = dep.find('dependent').text
 
-    for idx in dic.keys():
+    for idx in sorted(dic.keys()):
         if idx in dicn.keys() and idx in dicd.keys():
             print(dicn[idx]+'\t'+dic[idx]+'\t'+dicd[idx])

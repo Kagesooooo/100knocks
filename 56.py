@@ -24,8 +24,8 @@ for i, sens in enumerate(root.findall('document/sentences/sentence')):
             for k in range(len(dic[word]['sentence'])):
                 if i == dic[word]['sentence'][k]:
                     if j == dic[word]['start'][k]:
-                        sen += '[' + word + ']' + ' ' + '('
+                        sen += '[' + word + '('
                     if j == dic[word]['end'][k]:
-                        sen = sen[:-1] + ')' + ' '
+                        sen = sen[:-1] + ')]' + ' '
         sen += tok.find('word').text + ' '
     print(sen[:-1])
