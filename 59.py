@@ -40,24 +40,26 @@ for parse in root.findall('document/sentences/sentence/parse'):
     cnt = 0
     mk_nplist(parse.text[:-1],cnt)
     # print(list1)
+    for i in list1:
+        print(i)
 
 
 
-    for i in range(len(list1[:-1])):
-        flag = False
-        for j in range(len(list1))[::-1]:
-            if list1[i] in list1[j] and list1[i+1] in list1[j]:
-                if list1[j] not in list2:
-                    if listw[i] > listw[j]:
-                        list2.append(list1[j])
-            elif list1[i] == list1[j] and i != j:
-                flag = True
-        if flag:
-            list2.append(list1[i])
-        if list1[i] not in list2:
-            list2.append(list1[i])
-    if list1[-1] not in list2:
-        list2.append(list1[-1])
-
-    for l in list2:
-        print(l)
+    # for i in range(len(list1[:-1])):
+    #     flag = False
+    #     for j in range(len(list1))[::-1]:
+    #         if list1[i] in list1[j] and list1[i+1] in list1[j]:
+    #             if list1[j] not in list2:
+    #                 if listw[i] > listw[j]:
+    #                     list2.append(list1[j])
+    #         elif list1[i] == list1[j] and i != j:
+    #             flag = True
+    #     if flag:
+    #         list2.append(list1[i])
+    #     if list1[i] not in list2:
+    #         list2.append(list1[i])
+    # if list1[-1] not in list2:
+    #     list2.append(list1[-1])
+    #
+    # for l in list2:
+    #     print(l)
