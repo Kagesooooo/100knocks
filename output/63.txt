@@ -1,0 +1,14 @@
+No.1
+	rock	1
+	britpop	3
+	british	4
+	uk	1
+	britannique	1
+	rock and indie	1
+	england	1
+	manchester	1
+No.2
+None
+No.3
+	morning glory	1
+	oasis	1
