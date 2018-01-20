@@ -25,14 +25,14 @@ for k in range(5):
         sen = l.strip('\n').split()
         rate = func8.predict(a[k], sen[1:])
         if rate > 0.5:
-            fo.write(str(sen[0])+'\t+1\t'+str(rate)+'\n')
+            # fo.write(str(sen[0])+'\t+1\t'+str(rate)+'\n')
             # print('{}\t+1\t{}'.format(sen[0],rate))
             if sen[0] == '+1':
                 cnt0 += 1
             else:
                 cnt2 += 1
         else:
-            fo.write(str(sen[0])+'\t-1\t'+str(rate)+'\n')
+            # fo.write(str(sen[0])+'\t-1\t'+str(rate)+'\n')
             # print('{}\t-1\t{}'.format(sen[0],1-rate))
             if sen[0] == '+1':
                 cnt1 += 1
