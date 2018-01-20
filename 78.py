@@ -4,7 +4,7 @@ with open('sentiment.txt')as f:
     read = f.readlines()
 list0 = func8.mk_lines(read)
 
-fo = open('data_file.txt','w')
+# fo = open('data_file.txt','w')
 
 eta0 = 0.1
 loop = 10
@@ -49,4 +49,4 @@ print('適合率: {}'.format(com))
 print('再現率: {}'.format(rep))
 print('F1: {}'.format(f1))
 
-fo.write()
+# fo.close()

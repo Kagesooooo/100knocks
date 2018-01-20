@@ -6,7 +6,9 @@ with open('output/73.txt')as f:
         a = l.split()
         dic[a[0]] = float(a[1])
 
-sen = input('hai ')
+# sen = input('hai ')
+
+sen = 'deep intelligence and a warm , enveloping affection breathe out of every frame .'
 
 rate = func8.predict(dic, sen.split())
 
