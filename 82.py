@@ -5,7 +5,9 @@ with open('enwiki2.txt')as f:
     for sen in f:
         word_list = []
         for word in sen.split():
-            word_list.append(word)
+            # if word == 'United_States':
+            #     print('unko')
+            word_list.append(word.lower())
         word_lists.append(word_list)
 
 for word_list in word_lists:

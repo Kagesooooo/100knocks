@@ -14,4 +14,8 @@ t.txt
 
 c.txt
 
+*.mat
+
+chap9_index
+
 enwiki*

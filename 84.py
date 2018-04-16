@@ -1,6 +1,10 @@
 import json
-from collections import defaultdict
+import pickle
+from collections import OrderedDict
 import math
+from scipy import sparse, io
+import sklearn.decomposition
+import numpy as np
 
 with open('tc.txt', encoding='utf-8') as ftc:
     tc_dic = json.load(ftc)
@@ -12,7 +16,12 @@ with open('c.txt')as fc:
 line = open('output/83.txt').read()
 n = int(line[:-1])
 
-xtc_dic = defaultdict(dict)
+index_t = OrderedDict((key, i) for i, key in enumerate(sorted(t_dic.keys())))
+index_c = OrderedDict((key, i) for i, key in enumerate(sorted(c_dic.keys())))
+len_t = len(index_t)
+len_c = len(index_c)
+matrix0 = sparse.lil_matrix((len_t,len_c))
+
 for key,value in tc_dic.items():
     if value < 10:
         continue
@@ -23,6 +32,8 @@ for key,value in tc_dic.items():
     if f < 0:
         continue
     else:
-        xtc_dic[t][c] = f
+        matrix0[index_t[t],index_c[c]] = f
 
-json.dump(xtc_dic,open('output/84.txt','w'))
+io.savemat('chap9_matrix.mat',{'matrix0':matrix0})
+with open('chap9_index','wb')as d:
+    pickle.dump(index_t,d)
