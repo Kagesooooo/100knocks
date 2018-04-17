@@ -7,6 +7,7 @@ plyvel_tag
 plyveldb
 
 output/8*
+output/9*
 
 tc.txt
 
@@ -17,5 +18,6 @@ c.txt
 *.mat
 
 chap9_index
+chap10*
 
 enwiki*

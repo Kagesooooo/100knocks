@@ -4,8 +4,6 @@ import matplotlib.pyplot as plt
 with open('data_file.txt')as f:
     data_list = f.readlines()
 
-# print(len(data_list))
-
 i_list = []
 coms = []
 reps = []
@@ -39,15 +37,7 @@ for i in np.arange(0.02,1.0,0.05):
     coms.append(cnt0/(cnt0+cnt2))
     reps.append(cnt0/(cnt0+cnt1))
 
-plt.plot(i_list,coms)
-plt.plot(i_list,reps)
+plt.plot(i_list,coms,label='pre')
+plt.plot(i_list,reps,label='rec')
+plt.legend()
 plt.show()
-
-
-
-
-
-# correct = (cnt0+cnt3)/(cnt0+cnt1+cnt2+cnt3)
-# com = cnt0/(cnt0+cnt2)
-# rep = cnt0/(cnt0+cnt1)
-# f1 = 2*(com*rep)/(com+rep)
