@@ -18,5 +18,5 @@ with open('chap10_word2vec', 'rt')as f:
         matrix[i] = work[1:]
 
 io.savemat('chap10_matrix_300', {'matrix_300': matrix})
-with open('chap10_index', 'wb')as f:
+with open('chap10_index','wb')as f:
     pickle.dump(index,f)
