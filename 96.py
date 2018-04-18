@@ -3,7 +3,6 @@ from scipy import io
 import pickle
 from collections import OrderedDict
 
-
 with open('chap10_word2vec.txt', 'rt')as f:
     sens = f.readlines()
 

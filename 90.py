@@ -4,7 +4,7 @@ import numpy as np
 from scipy import io
 import word2vec
 
-# word2vec.word2vec(train='enwiki2.txt',output='chap10_word2vec.txt',size=300,threads=4,binary=0)
+word2vec.word2vec(train='enwiki2.txt',output='chap10_word2vec.txt',size=300)
 
 with open('chap10_word2vec.txt', 'rt')as f:
     sen = f.readlines()

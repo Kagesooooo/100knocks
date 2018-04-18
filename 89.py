@@ -24,5 +24,5 @@ distances = [cos(x, matrix_300[i]) for i in range(len(index))]
 
 index_sorted= np.argsort(distances)
 keys = list(index.keys())
-for index in index_sorted[:-12:-1]:
+for index in index_sorted[:-20:-1]:
     print('{}\t{}'.format(keys[index], distances[index]))

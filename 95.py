@@ -12,9 +12,9 @@ for sen in sens:
     model.append(float(words[3]))
     cnt += 1
 
-total = 0
+n = 0
 for i in range(cnt):
-    total += pow(human[i]-model[i], 2)
-result = 1 - (6 * total) / (pow(cnt, 3) - cnt)
+    n += pow(human[i]-model[i], 2)
+result = 1-(6*n)/(pow(cnt,3)-cnt)
 
 print(result)

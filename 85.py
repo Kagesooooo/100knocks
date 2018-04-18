@@ -7,7 +7,7 @@ with open('chap9_index', 'rb') as f:
 
 matrix0 = io.loadmat('chap9_matrix.mat')['matrix0']
 
-print(matrix0[index['franc']])
+# print(matrix0[index['france']])
 
 clf = sklearn.decomposition.TruncatedSVD(300)
 matrix_300 = clf.fit_transform(matrix0)

@@ -9,28 +9,29 @@ def cos(x,y):
 with open('output/91.txt')as f:
     sens = f.readlines()
 
-with open('chap10_index','rb')as f:
-    index = pickle.load(f)
-keys = [key for key in index.keys()]
-matrix_300 = io.loadmat('chap10_matrix_300')['matrix_300']
-
-# with open('chap9_index','rb')as f:
+# with open('chap10_index','rb')as f:
 #     index = pickle.load(f)
 # keys = [key for key in index.keys()]
-# matrix_300 = io.loadmat('chap9_matrix_300')['matrix_300']
+# matrix_300 = io.loadmat('chap10_matrix_300')['matrix_300']
+
+with open('chap9_index','rb')as f:
+    index = pickle.load(f)
+keys = [key for key in index.keys()]
+matrix_300 = io.loadmat('chap9_matrix_300')['matrix_300']
 
 with open('output/92.txt','w')as f:
     for sen in sens[1:]:
         words = sen.split()
-        top_value = -1
-        top_word = ''
         try:
+            top_value = -1
+            top_word = ''
             vec = matrix_300[index[words[1]]]-matrix_300[index[words[0]]]+matrix_300[index[words[2]]]
             for key in keys:
                 sim = cos(vec,matrix_300[index[key]])
                 if sim > top_value:
                     top_value = sim
                     top_word = key
+            # print(sen.strip()+' '+top_word+' '+str(top_value))
+            f.write(sen.strip()+' '+top_word+' '+str(top_value)+'\n')
         except KeyError:
             pass
-        f.write(sen.strip()+' '+top_word+' '+str(top_value)+'\n')

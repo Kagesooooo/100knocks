@@ -11,7 +11,7 @@ matrix_300 = io.loadmat('chap10_matrix_300')['matrix_300']
 
 def cos(x,y):
     ab = np.linalg.norm(x) * np.linalg.norm(y)
-    return np.dot(x,y) / ab if ab!=0 else -1
+    return np.dot(x,y)/ab if ab!=0 else -1
 
 with open('output/94.txt','w')as f:
     for sen in sens[1:]:
